@@ -12,7 +12,7 @@ clock = pygame.time.Clock()
 
 
 def get_mouse_pos():
-    return tuple(map(lambda x: x // SQ_SIZE, pygame.mouse.get_pos()))
+    return tuple(map(lambda s: (s // SQ_SIZE), pygame.mouse.get_pos()))
 
 
 grid = np.zeros((W//SQ_SIZE, H//SQ_SIZE), dtype=bool)
@@ -43,5 +43,9 @@ while True:
 
     if pygame.mouse.get_pressed()[0]:
         grid[get_mouse_pos()] = True
+        i, j = get_mouse_pos()
+        if i < 27 and j < 27:
+            grid[i + 1, j] = True
+            grid[i, j + 1] = True
 
     draw()

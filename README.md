@@ -13,7 +13,8 @@
 5. The program will print its guess to the console 
 
 ## Disclaimer 
-- The algorithm used is a very naive implementation of the K nearest neighbours algorithm
+- The algorithm used is a very naive implementation of the K nearest neighbours algorithm,
+  making it very inaccurate. 
 - Training samples are from the MNIST handwritten digit dataset
 
 

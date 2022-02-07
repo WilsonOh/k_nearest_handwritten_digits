@@ -10,7 +10,8 @@
 2. run the drawing.py file with python
 >> *The program will take a few seconds to load as it is reading in the training samples*
 4. Draw any digit in the window provided
-5. The program will print its guess to the console 
+5. Press the **ENTER** key to submit the digit or **ESC** to reset the canvas 
+6. The program will print its guess to the console 
 
 ## Disclaimer 
 - The algorithm used is a very naive implementation of the K nearest neighbours algorithm,

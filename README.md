@@ -15,8 +15,8 @@
 
 ## Disclaimer 
 - The algorithm used is a very naive implementation of the K nearest neighbours algorithm,
-  making it very inaccurate. 
-- Training samples are from the MNIST handwritten digit dataset
+  making it fairly inaccurate. 
+- Training samples are from the MNIST handwritten digit dataset (60,000 training samples)
 
 
 

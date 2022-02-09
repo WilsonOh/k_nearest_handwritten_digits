@@ -15,8 +15,10 @@ class Test(Digit):
     def __init__(self):
         super().__init__()
 
+    # Construct a digit matrix from the provided boolean matrix
     def read_digits(self, grid) -> None:
-        self.ar = np.array([['#' if elem else '.' for elem in row] for row in grid])
+        self.ar = np.array([['#' if elem else '.' for elem in row]
+                            for row in grid])
 
 
 class Neighbour(Digit):
@@ -24,6 +26,8 @@ class Neighbour(Digit):
         super().__init__()
         self.distance = 0
 
+    # Comparison operator overload to compare neighbours based on
+    # their distance
     def __gt__(self, other):
         return self.distance > other.distance
 
